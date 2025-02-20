@@ -186,31 +186,16 @@ export const ProfileScreen = () => {
               />
             </View>
             <View style={styles.inputContainer}>
-              <Text style={styles.label}>Last Name</Text>
+              <Text style={styles.label}>Nickname</Text>
               <TextInput
                 style={styles.input}
-                placeholder="Enter your last name"
+                placeholder="Enter your nickname"
                 value={lastName}
                 placeholderTextColor={COLORS.inputLabel}
                 onChangeText={setLastName}
               />
             </View>
-            <View style={{flex: 1, flexDirection: 'row', gap: 16}}>
-              <DateInput
-                label="Date of Birth"
-                value={date}
-                onChange={setDate}
-              />
-              <DropdownInput
-                containerStyle={{flex: 1}}
-                onValueChange={setGender}
-                dataPickedValue={
-                  gender
-                    ? genderData.find(item => item.value === gender)
-                    : undefined
-                }
-              />
-            </View>
+            
           </View>
           <View style={{flexDirection: 'row', gap: 12}}>
             <SecondaryButton
