@@ -1,4 +1,4 @@
-package com.crown
+package com.PersonalCrownGameCollection
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
